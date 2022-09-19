@@ -1,0 +1,97 @@
+[debug] [2022-09-19T18:53:44.284Z] ----------------------------------------------------------------------
+[debug] [2022-09-19T18:53:44.285Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-09-19T18:53:44.285Z] CLI Version:   11.9.0
+[debug] [2022-09-19T18:53:44.285Z] Platform:      darwin
+[debug] [2022-09-19T18:53:44.285Z] Node Version:  v16.15.0
+[debug] [2022-09-19T18:53:44.286Z] Time:          Mon Sep 19 2022 23:53:44 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-09-19T18:53:44.286Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-19T18:53:44.289Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-19T18:53:44.289Z] > authorizing via signed-in user (gulfarazhassan535@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/faraz/Desktop/Work/JavaScriptMatery/Resturant_App/client
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-09-19T18:54:38.280Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2022-09-19T18:54:38.280Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"gulfarazresturantlanding","name":"gulfarazresturantlanding"}
+[debug] [2022-09-19T18:54:41.920Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2022-09-19T18:54:41.921Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.8941485882427880893"}
+[debug] [2022-09-19T18:54:41.922Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8941485882427880893 [none]
+[debug] [2022-09-19T18:54:44.264Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8941485882427880893 200
+[debug] [2022-09-19T18:54:44.265Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8941485882427880893 {"name":"operations/cp.8941485882427880893","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2022-09-19T18:54:44.768Z] [Project Creation Poller] Retrying task index 0
+[debug] [2022-09-19T18:54:44.769Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8941485882427880893 [none]
+[debug] [2022-09-19T18:54:46.764Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8941485882427880893 200
+[debug] [2022-09-19T18:54:46.764Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8941485882427880893 {"name":"operations/cp.8941485882427880893","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"187139767591","projectId":"gulfarazresturantlanding","lifecycleState":"ACTIVE","name":"gulfarazresturantlanding","createTime":"2022-09-19T18:54:41.049Z"}}
+[debug] [2022-09-19T18:54:46.766Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/gulfarazresturantlanding:addFirebase [none]
+[debug] [2022-09-19T18:54:50.341Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/gulfarazresturantlanding:addFirebase 200
+[debug] [2022-09-19T18:54:50.341Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/gulfarazresturantlanding:addFirebase {"name":"operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx"}
+[debug] [2022-09-19T18:54:50.341Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx [none]
+[debug] [2022-09-19T18:54:51.953Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx 200
+[debug] [2022-09-19T18:54:51.954Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx {"name":"operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx"}
+[debug] [2022-09-19T18:54:52.455Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-09-19T18:54:52.456Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx [none]
+[debug] [2022-09-19T18:54:53.901Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx 200
+[debug] [2022-09-19T18:54:53.901Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx {"name":"operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx"}
+[debug] [2022-09-19T18:54:54.903Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-09-19T18:54:54.905Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx [none]
+[debug] [2022-09-19T18:54:56.153Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx 200
+[debug] [2022-09-19T18:54:56.153Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx {"name":"operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx"}
+[debug] [2022-09-19T18:54:58.159Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-09-19T18:54:58.160Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx [none]
+[debug] [2022-09-19T18:54:59.432Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx 200
+[debug] [2022-09-19T18:54:59.432Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx {"name":"operations/workflows/ZjdkNjdkNWUtZDM2NS00NDM0LTlmMzEtNzYxMjJkMTU1OTIx","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"gulfarazresturantlanding","projectNumber":"187139767591","displayName":"gulfarazresturantlanding","name":"projects/gulfarazresturantlanding","resources":{"hostingSite":"gulfarazresturantlanding"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: gulfarazresturantlanding
+[info]    - Project Name: gulfarazresturantlanding
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/gulfarazresturantlanding/overview
+[info] i  Using project gulfarazresturantlanding (gulfarazresturantlanding) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-09-19T18:55:31.032Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-09-19T18:55:31.478Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-09-19T18:55:31.478Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.10.0","browserURL":"https://www.gstatic.com/firebasejs/9.10.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.10.0/firebase.tgz"},"live":{"version":"9.10","browserURL":"https://www.gstatic.com/firebasejs/live/9.10/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.10/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.10.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.10.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.10.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.10.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.10.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.10.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.10.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.10.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.10.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.10.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/faraz 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=182225234&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-09-19T18:55:56.157Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-09-19T18:55:56.158Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-09-19T18:55:57.345Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-09-19T18:55:57.345Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-09-19T18:55:57.363Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-09-19T18:55:58.476Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-09-19T18:55:58.477Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"GulfarazHassan","id":20818265,"node_id":"MDQ6VXNlcjIwODE4MjY1","avatar_url":"https://avatars.githubusercontent.com/u/20818265?v=4","gravatar_id":"","url":"https://api.github.com/users/GulfarazHassan","html_url":"https://github.com/GulfarazHassan","followers_url":"https://api.github.com/users/GulfarazHassan/followers","following_url":"https://api.github.com/users/GulfarazHassan/following{/other_user}","gists_url":"https://api.github.com/users/GulfarazHassan/gists{/gist_id}","starred_url":"https://api.github.com/users/GulfarazHassan/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/GulfarazHassan/subscriptions","organizations_url":"https://api.github.com/users/GulfarazHassan/orgs","repos_url":"https://api.github.com/users/GulfarazHassan/repos","events_url":"https://api.github.com/users/GulfarazHassan/events{/privacy}","received_events_url":"https://api.github.com/users/GulfarazHassan/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":43,"public_gists":0,"followers":1,"following":1,"created_at":"2016-08-03T14:26:15Z","updated_at":"2022-09-19T18:55:55Z","private_gists":0,"total_private_repos":52,"owned_private_repos":52,"disk_usage":1222681,"collaborators":4,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as GulfarazHassan 
+[info] 
